@@ -1,0 +1,7 @@
+INTRO
+ocean gate limited (it is a company) it was established 3 yrs back
+    this comapny deals with various data storage products (right from floppy disk to storage devices)
+
+PROBLEM STATEMENT:
+Some probable customers would also like to compare the various products within the same category.
+ For e.g. there are 2 different types of CD ROM Drives one with max speed 24X and the other with 52X.
