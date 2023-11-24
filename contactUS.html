@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - The Fixers Home Service Providers</title>
+<link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+<script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<script src="bootstrap-5.0.2-dist/jquery-3.7.0.min.js"></script>
+ <!-- bootstrap cdn   -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+ rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- custom css  -->
+<link rel="stylesheet" href="snippets.css">
+<link rel="stylesheet" href="contactUS.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="Home.css">
+     
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- custon js  -->
+<script src="snippets.js"></script>
+<style>
+  #checkfields{
+   padding: 8px 7px;
+   border-radius: 9px;
+   background-color: black;
+   color: aliceblue;
+
+}
+</style>
+
+</head>
+<body>
+
+    <header id="NAV">  
+    </header>
+
+<div class="container  message ">
+<h1 class="text-center" id="contact">Contact Us</h1>
+<p class="text-center">Leave your message here we will contact you.</p>
+</div>
+
+<div class="container  py-5">
+<div class="row contact">
+ <div class="col-lg-4 py-3" style="border-right:1px dashed ;">
+<h1 class="text-center text-dark p-3">Address</h1>
+<p class="text-center text-dark">Progressive Center, suite # 202-203, 30-A Shahrah-e-Faisal Rd, Karachi, 75400</p>
+</div>
+<div class="col-lg-4 py-3" style="border-right:1px dashed ;">
+<h1 class="text-center text-dark p-3">Phone Number</h1>
+<a href="https://api.whatsapp.com/send/?phone=03161611692&text&type=phone_number&app_absent=0" style="text-decoration: none;"><p class="text-center text-dark">+92 316 1611692  Click to Send Whatsapp</p></a>
+</div>
+<div class="col-lg-4 py-3">
+<h1 class="text-center text-dark p-3">Email</h1>
+<p class="text-center text-dark ">info@OceanGatelimited.com</p>
+</div>
+</div>
+</div>
+
+
+
+<div class="container" style="padding-bottom: 71px";>
+  <div class="col-lg-12">
+
+
+      <div class="form-group">
+     
+          <label for="">Name</label>
+          <input type="text" name="" id="e_name" class="form-control" placeholder="" aria-describedby="helpId">
+     
+        </div>
+        <div class="form-group">
+            <label for="">Email</label>
+            <input type="text" name="" id="e_email" class="form-control" placeholder="" aria-describedby="helpId">
+           
+          </div>
+          <div class="form-group">
+            <label for="">Password</label>
+            <input type="text" name="" id="e_pass" class="form-control" placeholder="" aria-describedby="helpId">
+     
+          </div>
+          <div class="form-group">
+            <label for="">confirm password</label>
+            <input type="text" name="" id="e_c_pass" class="form-control" placeholder="" aria-describedby="helpId">
+            
+          </div>
+          <div class="form-group">  
+            <label for="">SUBJECT</label>
+            <textarea rows="5" type="message" name="" class="form-control" placeholder="write your subject" aria-describedby="helpId" ></textarea>
+            
+          </div>
+          <a href="mailto:ma8644933@gmail.com"  id="checkfields" >SignUp</a>
+    </div>
+</div>
+
+  <!-- footer -->
+  <footer class="bg-light text-dark p-5" id="FOOT">
+  </footer>
+
+
+    <script>
+        $('#e_name').keyup(function(){
+          let name =   $('#e_name').val();
+          let name_RE = /^[a-zA-Z\s]{3,}$/;
+          if(!name_RE.test(name)){
+            $(this).css({'border':'2px solid red'});
+            $(this).next('small').show().text('Please enter valid name ').css({
+                'color':'red' })
+
+          }
+          else{
+            $(this).css({'border':'2px solid green'});
+            $(this).next('small').hide();
+
+          }
+        });
+        $('#e_email').keyup(function(){
+          let email =   $('#e_email').val();
+          let email_RE = /^[\w\s]{3,}@[a-z]{3,5}.[a-z]{3}$/;
+          if(!email_RE.test(email)){
+            $(this).css({'border':'2px solid red'});
+            $(this).next('small').show().text('Please enter valid email ').css({
+                'color':'red' })
+
+          }
+          else{
+            $(this).css({'border':'2px solid green'});
+            $(this).next('small').hide();
+
+          }
+        });
+        $('#e_pass').keyup(function(){
+          let pass =  $('#e_pass').val();
+          let pass_RE = /^[A-Za-z\d]{8,}$/;
+          if(!pass_RE.test(pass)){
+            $(this).next('small').show().text('password must have valid lenghth or contain special character ');
+            $(this).next('small').css('color','red')
+            $(this).css({'border':'2px solid red'});
+          }
+          else{
+            $(this).next('small').hide();
+            $(this).css({'border':'2px solid green',});
+          }
+        })
+
+
+        $('#e_c_pass').keyup(function(){
+          let c_pass =  $('#e_c_pass').val();
+          let pass =  $('#e_pass').val();
+       
+          if(c_pass != pass){
+            $(this).next('small').show().text('password is not matched');
+            $(this).next('small').css('color','red')
+            $(this).css({'border':'2px solid red'});
+          }
+          else{
+            $(this).next('small').hide();
+            $(this).css({'border':'2px solid green',});
+          }
+        })
+            function emptyFields(id){
+              if($(id).val() == ""){
+                $(id).css({'border':'1px solid red' });
+                $(id).next('small').show().text('This field is required').css({
+                'color':'red'})
+              }
+
+            }
+            let std_Array = JSON.parse(window.localStorage.getItem('aptech_students')) || [];
+
+            $('#checkfields').click(function(){
+                
+                    let sname = $('#e_name').val();
+                    let semail = $('#e_email').val();
+                    let spass = $('#e_pass').val();
+                    let scpass = $('#e_c_pass').val();
+                        let pass_RE = /^[A-Za-z\d]{8,}$/;
+                        let name_RE = /^[a-zA-z\s]{3,}$/;
+                        let email_RE = /^[\w\s]{3,}@[a-z]{3,5}.[a-z]{3}$/;
+                    
+                    emptyFields('#e_name');
+                    emptyFields('#e_email');
+                    emptyFields('#e_pass');
+                    emptyFields('#e_c_pass');
+                    
+                    if(sname != "" && semail != "" && spass != "" && scpass != "" ){
+                       if(name_RE.test(sname) && email_RE.test(semail) && pass_RE.test(spass)){ 
+                      if(spass == scpass){
+                     std_Array.push({'std_name': sname ,'std_email': semail,'std_pass': spass});
+                  window.localStorage.setItem('aptech_students',JSON.stringify(std_Array));
+                  alert('data added successfully');
+              
+                }
+                else{
+                  alert('password not matched');
+                }
+            }
+            else{
+                alert(' invalid data ');
+            }
+                
+                      
+                }
+             
+                   
+                    
+                
+            })
+
+    </script>

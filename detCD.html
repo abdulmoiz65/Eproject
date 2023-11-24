@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+     <!-- bootstrap cdn   -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+    
+    <!-- bootstrap links -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+     <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+     <!-- jquery link  -->
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+     <!-- custom-css  -->
+     <link rel="stylesheet" href="/snippets.css">
+     <link rel="stylesheet" href="detail.css">
+     <!-- custom js -->
+     <script src="../snippets.js"></script>
+     
+</head>
+<body>
+
+<!-- nav bar  -->
+<header id="NAV"></header>
+
+    <div class="container page">
+        <div class="row" id="productDetail">
+            <div class="col-lg-5">
+                <img id="productImage" class="card-img-top" alt="Product Image">
+            </div>
+
+            <div class="col-lg-6">
+                <h5 id="productName" class="card-title">Product Name</h5>
+                <p id="productModel" class="card-text">Product Model</p>
+                <p id="productPrice" class="card-text">Price</p>
+                <p class="card-text">Description:</p>
+                <p id="productDescription" class="card-text"></p>
+
+                <!-- Add to Cart Button -->
+                <button id="addToCartButton" class="btn btn-primary">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+      <!-- footer -->
+      <footer class="bg-light text-dark p-5" id="FOOT"></footer>
+    <script>
+        // Retrieve product ID from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get("id");
+
+     
+        const products = [
+    {
+        "id":1,
+        "image":"/card_img/cd/cdsam-removebg-preview.png",
+        "model": "Samsung-CDROM-1234",
+        "name": "Samsung Slimline CD-ROM Drive",
+        "des": "A slim and compact CD-ROM drive from Samsung, suitable for laptops and desktops that require basic optical disc reading capabilities.",
+        "price": 870
+      },
+      {
+        "id":2,
+        "image":"/card_img/cd/cdsam2-removebg-preview.png",
+        "model": "Samsung-CDROM-5678",
+        "name": "Samsung External USB CD-ROM Drive",
+        "des": "An external CD-ROM drive with USB connectivity from Samsung, designed for laptops and computers without built-in optical drives.",
+        "price": 630
+      },
+      {
+        "id":3,
+        "image":"/card_img/cd/cdsam3-removebg-preview.png",
+        "model": "Samsung-CDROM-9012",
+        "name": "Samsung Internal CD-ROM Drive",
+        "des": "An internal CD-ROM drive for desktop computers from Samsung, offering reliable disc reading capabilities for various applications.",
+        "price": 750
+      },
+      {
+        "id":4,
+        "image":"/card_img/cd/cdsam4-removebg-preview.png",
+        "model": "Samsung-CDROM-3456",
+        "name": "Samsung Compact Disc Reader",
+        "des": "A compact CD-ROM drive from Samsung, suitable for ultrabooks and devices with limited space. Offers basic optical disc reading functionality.",
+        "price": 600
+      },
+      {
+        "id":5,
+        "image":"/card_img/cd/cdhp-removebg-preview.png",
+        "model": "HP-CDROM-1234",
+        "name": "HP Slimline CD-ROM Drive",
+        "des": "A slim and compact CD-ROM drive from HP, suitable for laptops and desktops that require basic optical disc reading capabilities.",
+        "price": 800
+      },
+      {
+        "id":6,
+        "image":"/card_img/cd/cdhp2-removebg-preview.png",
+        "model": "HP-CDROM-5678",
+        "name": "HP External USB CD-ROM Drive",
+        "des": "An external CD-ROM drive with USB connectivity, designed for laptops and computers without built-in optical drives.",
+        "price": 600
+      },
+      {
+        "id":7,
+        "image":"/card_img/cd/cdhp3-removebg-preview.png",
+        "model": "HP-CDROM-9012",
+        "name": "HP Internal CD-ROM Drive",
+        "des": "An internal CD-ROM drive for desktop computers, offering reliable disc reading capabilities for various applications.",
+        "price": 700
+      },
+      {
+        "id":8,
+        "image":"/card_img/cd/cdhp4-removebg-preview.png",
+        "model": "HP-CDROM-3456",
+        "name": "HP Compact Disc Reader",
+        "des": "A compact CD-ROM drive from HP, suitable for ultrabooks and devices with limited space. Offers basic optical disc reading functionality.",
+        "price": 500
+    },
+    {
+        "id":9,
+        "image":"/card_img/cd/cdmic-removebg-preview.png",
+        "model": "Samsung-CDROM-1234",
+        "name": "Samsung Slimline CD-ROM Drive",
+        "des": "A slim and compact CD-ROM drive from Samsung, suitable for laptops and desktops that require basic optical disc reading capabilities.",
+        "price": 870
+      },
+      {
+        "id":10,
+        "image":"/card_img/cd/cdmic2-removebg-preview.png",
+        "model": "Samsung-CDROM-5678",
+        "name": "Samsung External USB CD-ROM Drive",
+        "des": "An external CD-ROM drive with USB connectivity from Samsung, designed for laptops and computers without built-in optical drives.",
+        "price": 630
+      },
+      {
+        "id":11,
+        "image":"/card_img/cd/cdmic3-removebg-preview.png",
+        "model": "Samsung-CDROM-9012",
+        "name": "Samsung Internal CD-ROM Drive",
+        "des": "An internal CD-ROM drive for desktop computers from Samsung, offering reliable disc reading capabilities for various applications.",
+        "price": 750
+      },
+      {
+        "id":12,
+        "image":"/card_img/cd/cdmic4-removebg-preview.png",
+        "model": "Samsung-CDROM-3456",
+        "name": "Samsung Compact Disc Reader",
+        "des": "A compact CD-ROM drive from Samsung, suitable for ultrabooks and devices with limited space. Offers basic optical disc reading functionality.",
+        "price": 600
+      },
+      {
+        "id":13,
+        "image":"/card_img/cd/cdintel-removebg-preview.png",
+        "model": "Intel-CDROM-1234",
+        "name": "Intel Slimline CD-ROM Drive",
+        "des": "A slim and compact CD-ROM drive from Intel, suitable for laptops and desktops that require basic optical disc reading capabilities.",
+        "price": 890
+      },
+      {
+        "id":14,
+        "image":"/card_img/cd/cdintel2-removebg-preview.png",
+        "model": "Intel-CDROM-5678",
+        "name": "Intel External USB CD-ROM Drive",
+        "des": "An external CD-ROM drive with USB connectivity from Intel, designed for laptops and computers without built-in optical drives.",
+        "price": 650
+      },
+      {
+        "id":15,
+        "image":"/card_img/cd/cdintel3-removebg-preview.png",
+        "model": "Intel-CDROM-9012",
+        "name": "Intel Internal CD-ROM Drive",
+        "des": "An internal CD-ROM drive for desktop computers from Intel, offering reliable disc reading capabilities for various applications.",
+        "price": 770
+      },
+      {
+        "id":16,
+        "image":"/card_img/cd/cdintel4-removebg-preview.png",
+        "model": "Intel-CDROM-3456",
+        "name": "Intel Compact Disc Reader",
+        "des": "A compact CD-ROM drive from Intel, suitable for ultrabooks and devices with limited space. Offers basic optical disc reading functionality.",
+        "price": 620
+      }      
+                         
+    ];
+ 
+
+        // Find the product with the matching ID
+        const selectedProduct = products.find(product => product.id == productId);
+
+        
+        if (selectedProduct) {
+            document.getElementById("productImage").src = selectedProduct.image;
+            document.getElementById("productName").textContent = selectedProduct.name;
+            document.getElementById("productModel").textContent = `Product Model: ${selectedProduct.model}`;
+            document.getElementById("productPrice").textContent = `Price: $${selectedProduct.price}`;
+            document.getElementById("productDescription").textContent = selectedProduct.des;
+
+            // Add to Cart Button Click Event
+            const addToCartButton = document.getElementById("addToCartButton");
+            addToCartButton.addEventListener("click", () => {
+              
+                alert(`Added ${selectedProduct.name} to the cart!`);
+            });
+        }
+    </script>
+</body>
+</html>

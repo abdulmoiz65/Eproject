@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+    body{
+    
+        font-family: 'Poppins', sans-serif;
+    }
+
+/* center  */
+.center{
+    height: 450px;
+}
+.center img{
+    width: 100%;
+    height: 300px;
+}
+.center  p{
+    font-size: 35px ;
+    color: black;
+    font-weight: bold;
+    text-shadow: 5px 4px 35px gray;
+}
+.center span{
+    font-weight: lighter;
+    
+}
+@media (max-width: 990px) {
+    .center p {
+      font-size: 24px;
+      margin-bottom: 0px;
+    }
+  }
+
+@media (max-width: 750px) {
+    .center p {
+      font-size: 24px; /* Further reduce font size for smaller screens */
+      margin-bottom: 0px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .center img {
+      height: 150px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .products {
+      margin-top: 0;
+    }
+  }
+
+
+
+
+    /* products */
+.products h1{
+    font-size: 45;;
+    text-transform: uppercase;
+    text-align: center;
+}
+.products .pic{
+  height: 150px;
+  width: 150px;
+  transition: 0.5s;
+}
+.products .pic img{
+  height: inherit;
+  width: inherit;
+}
+.colp{
+  border-radius: 10px;
+  cursor: pointer;
+  border: 4px solid ;
+  transition: 0.5s;
+}
+.colp a{
+  color: black;
+  text-decoration: none;
+}
+.colp:hover{
+    border-top-right-radius: 45px;
+    border-bottom-left-radius:45px ;
+  box-shadow: 10px 10px 20px;
+  transform: scale(1.1);
+}
+@media (max-width: 760px) {
+    .colp {
+      margin-bottom: 20px;
+    }
+  }
+
+  /* feature */
+.feature{
+  padding: 45px;
+  background-color: rgb(4, 4, 96);
+}
+.feature h2{
+    font-size: 45px;
+    padding-bottom: 25px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.colf{
+    background-color: white;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 5px 4px 22px;
+}
+.feature .icon{
+  padding: 15px;
+    font-size: 45px;
+    color: blue;
+}
+@media (max-width: 992px) {
+    .colf {
+      margin-bottom: 20px;
+    }
+  }
+
+  /* testimonials */
+.circle{
+    height: 150px;
+    width: 150px;
+    border: 1px solid;
+    border-radius: 100px;
+}
+#testi h1{
+    padding-bottom: 25px;
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#testi img{
+    border-radius: 100px;
+    height: inherit;
+    width: inherit;
+}
+.colt{
+    border-radius: 25px;
+    border: 4px solid black;
+    box-shadow: 5px 4px 15px black;
+}
+.stars  .far{
+    color: green;
+    
+}
+.fas{
+    color: green;
+}
+@media (max-width: 770px) {
+  .colt {
+    margin-bottom: 20px;
+  }
+}
+
+

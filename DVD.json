@@ -1,0 +1,130 @@
+[
+    {
+      "id": 1,
+      "model": "Samsung-DVD-1234",
+      "image":"/card_img/dvd/dvdsam-removebg-preview.png",
+      "name": "Samsung Slimline DVD Drive",
+      "des": "A slim and compact DVD drive from Samsung, suitable for laptops and desktops that require basic optical disc reading and writing capabilities.",
+      "price": 1100
+    },
+    {
+      "id": 2,
+      "model": "Samsung-DVD-5678",
+      "image":"/card_img/dvd/dvdsam2-removebg-preview.png",
+      "name": "Samsung External USB DVD Drive",
+      "des": "An external DVD drive with USB connectivity from Samsung, designed for laptops and computers without built-in optical drives, suitable for reading and writing DVDs.",
+      "price": 850
+    },
+    {
+      "id": 3,
+      "model": "Samsung-DVD-9012",
+      "image":"/card_img/dvd/dvdsam3-removebg-preview.png",
+      "name": "Samsung Internal DVD Drive",
+      "des": "An internal DVD drive for desktop computers from Samsung, offering reliable DVD disc reading and writing capabilities for various applications.",
+      "price": 950
+    },
+    {
+      "id": 4,
+      "model": "Samsung-DVD-3456",
+      "image":"/card_img/dvd/dvdsam4-removebg-preview.png",
+      "name": "Samsung Compact DVD Writer",
+      "des": "A compact DVD writer from Samsung, suitable for ultrabooks and devices with limited space, designed for reading and writing DVDs.",
+      "price": 1000
+    },
+    {
+      "id": 5,
+      "model": "HP-DVD-1234",
+      "image":"/card_img/dvd/dvdhp-removebg-preview.png",
+      "name": "HP Slimline DVD Drive",
+      "des": "A slim and compact DVD drive from HP, suitable for laptops and desktops that require basic optical disc reading and writing capabilities.",
+      "price": 1000
+    },
+    {
+      "id": 6,
+      "model": "HP-DVD-5678",
+      "image":"/card_img/dvd/dvdhp2-removebg-preview.png",
+      "name": "HP External USB DVD Drive",
+      "des": "An external DVD drive with USB connectivity from HP, designed for laptops and computers without built-in optical drives, suitable for reading and writing DVDs.",
+      "price": 800
+    },
+    {
+      "id": 7,
+      "model": "HP-DVD-9012",
+      "image":"/card_img/dvd/dvdhp3-removebg-preview.png",
+      "name": "HP Internal DVD Drive",
+      "des": "An internal DVD drive for desktop computers from HP, offering reliable DVD disc reading and writing capabilities for various applications.",
+      "price": 900
+    },
+    {
+      "id": 8,
+      "model": "HP-DVD-3456",
+      "image":"/card_img/dvd/dvdhp4-removebg-preview.png",
+      "name": "HP Compact DVD Writer",
+      "des": "A compact DVD writer from HP, suitable for ultrabooks and devices with limited space, designed for reading and writing DVDs.",
+      "price": 950
+    },
+    {
+      "id": 9,
+      "model": "Microsoft-DVD-1234",
+      "image":"/card_img/dvd/dvdmic-removebg-preview.png",
+      "name": "Microsoft Slimline DVD Drive",
+      "des": "A slim and compact DVD drive from Microsoft, suitable for laptops and desktops that require basic optical disc reading and writing capabilities.",
+      "price": 1050
+    },
+    {
+      "id": 10,
+      "model": "Microsoft-DVD-5678",
+      "image":"/card_img/dvd/dvdmic2-removebg-preview.png",
+      "name": "Microsoft External USB DVD Drive",
+      "des": "An external DVD drive with USB connectivity from Microsoft, designed for laptops and computers without built-in optical drives, suitable for reading and writing DVDs.",
+      "price": 800
+    },
+    {
+      "id": 11,
+      "model": "Microsoft-DVD-9012",
+      "image":"/card_img/dvd/dvdmic3-removebg-preview.png",
+      "name": "Microsoft Internal DVD Drive",
+      "des": "An internal DVD drive for desktop computers from Microsoft, offering reliable DVD disc reading and writing capabilities for various applications.",
+      "price": 950
+    },
+    {
+      "id": 12,
+      "model": "Microsoft-DVD-3456",
+      "image":"/card_img/dvd/dvdintel-removebg-preview.png",
+      "name": "Microsoft Compact DVD Writer",
+      "des": "A compact DVD writer from Microsoft, suitable for ultrabooks and devices with limited space, designed for reading and writing DVDs.",
+      "price": 980
+    },
+    {
+      "id": 13,
+      "model": "Intel-DVD-1234",
+      "image":"/card_img/dvd/dvdintel-removebg-preview.png",
+      "name": "Intel Slimline DVD Drive",
+      "des": "A slim and compact DVD drive from Intel, suitable for laptops and desktops that require basic optical disc reading and writing capabilities.",
+      "price": 1150
+    },
+    {
+      "id": 14,
+      "model": "Intel-DVD-5678",
+      "image":"/card_img/dvd/dvdintel2-removebg-preview.png",
+      "name": "Intel External DVD Drive",
+      "des": "An external DVD drive with USB connectivity from Intel, designed for laptops and computers without built-in optical drives, suitable for reading and writing DVDs.",
+      "price": 870
+    },
+    {
+      "id": 15,
+      "model": "Intel-DVD-9012",
+      "image":"/card_img/dvd/dvdintel3-removebg-preview.png",
+      "name": "Intel Internal DVD Drive",
+      "des": "An internal DVD drive for desktop computers from Intel, offering reliable DVD disc reading and writing capabilities for various applications.",
+      "price": 980
+    },
+    {
+      "id": 16,
+      "model": "Intel-DVD-3456",
+      "image":"/card_img/dvd/dvdintel4-removebg-preview.png",
+      "name": "Intel Compact DVD Writer",
+      "des": "A compact DVD writer from Intel, suitable for ultrabooks and devices with limited space, designed for reading and writing DVDs.",
+      "price": 1000
+    }
+  ]

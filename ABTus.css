@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+    body{
+    
+        font-family: 'Poppins', sans-serif;
+    }
+.abtus{
+    text-align: left;
+    padding: 25px;
+}
+.abtus img{
+    width: 150px;
+    height: 170px;
+}
+.logo img{
+    width: 150px;
+    mix-blend-mode: multiply;
+}
+.colw{
+    border: 5px solid blue;
+    border-radius: 55px;
+    padding: 25px;
+}
+.why h2{
+    color: navy;
+    font-style:oblique;
+}
+.top .abb{
+    font-weight: bold;
+    text-shadow: 10px 15px 5px grey;
+    padding: 25px;
+    font-size: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    color: navy;
+    /* color: transparent; */
+}
+.globe img{
+    filter: drop-shadow(10px 20px  );
+}
+@media(max-width:770px) {
+    .colw{
+        margin-bottom: 20px;
+    }
+}
+
+/* footer  */
+footer ul{
+    list-style: none;
+}
+footer a{
+    font-size: 20px;
+    color: grey;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+footer a:hover{
+    color: black;
+    padding-left:10px ;
+}
+#follow { 
+    display: inline;
+    display: flex;
+}
+#follow a i{
+    margin: 15px;
+}

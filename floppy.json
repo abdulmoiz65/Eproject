@@ -1,0 +1,137 @@
+[
+    {
+        "id":1,
+        "name":"Samsung 3.5-Inch High-Density Floppy Disk",
+        "model":"Samsung FD-144M",
+        "image":"/card_img/floppy/floopy_sam-removebg-preview.png",
+        "price":45000,
+        "des":"Samsung, like many other manufacturers, produced the standard 3.5-inch floppy disk that was widely used for saving and transferring data in the late 20th century. These disks were characterized by their rigid plastic casing and the sliding metal shutter that protected the magnetic medium inside. The 1.44 MB capacity was standard for high-density floppy disks, making them suitable for storing documents, software, and small multimedia files"
+       
+    },
+    {
+        "id":2,
+        "name":"Samsung 5.25-Inch Floppy Disk",
+        "model":"Samsung SFD-505",
+        "image":"/card_img/floppy/floopy_sam2-removebg-preview.png",
+        "price":45000,
+        "des":"In the earlier years of personal computing, 5.25-inch floppy disks were the norm. Samsung produced these disks in both double-density (360 KB) and high-density (1.2 MB) formats. They had a flexible plastic casing and were often used to store early software and documents "
+
+    },
+    {
+        "id":3,
+        "name":"Samsung Floppy Disk Storage Boxes",
+        "model":"Samsung SFD-321B",
+        "image":"/card_img/floppy/floopy_sam3-removebg-preview.png",
+        "price":45000,
+        "des":"To keep these fragile disks safe and organized, Samsung, along with other manufacturers, often offered storage boxes or cases specifically designed for floppy disks. These boxes came in various sizes, holding anywhere from a dozen to several dozen disks. They helped protect the disks from dust, dirt, and physical damage. "
+
+    },
+    {
+        "id":4,
+        "name":"Samsung Floppy Diskettes with Color Labels",
+        "model":"Samsung SFD-321B",
+        "image":"/card_img/floppy/floopy_sam4-removebg-preview.png",
+        "price":45000,
+        "des":"Samsung, like other manufacturers, sometimes provided different colored labels or stickers for their floppy disks. These labels were used to categorize and organize data on the disks, with each color representing a different type of content. For example, a red label might indicate software, while a blue label could signify personal documents. "
+
+    },
+    {
+        "id":5,
+        "name":"HP 5.25 Floppy Disk 360KB",
+        "model":"HP C5709A",
+        "image":"/card_img/floppy/floppyhp-removebg-preview.png",
+        "price":500,
+        "des":" HP C5709A is a standard double-density (DD) 5.25 floppy disk with a storage capacity of 360KB. It's designed for use in vintage computers and devices that require this older format."
+    },
+    {
+        "id":6,
+        "name":"HP 5.25 Floppy Disk 1.2MB",
+        "model":"HP 3.5",
+        "image":"/card_img/floppy/floppyhp2-removebg-preview.png",
+        "price":45000,
+        "des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam blandit pellentesque ex, sit amet hendrerit diam fermentum at. Pellentesque imperdiet risus turpis, a malesuada orci rhoncus a. "
+
+    },
+    {
+        "id":7,
+        "name":"HP 5.25 Floppy Disk DS/DD",
+        "model":"HP 9120-4322",
+        "image":"/card_img/floppy/floppyhp3-removebg-preview.png",
+        "price":45000,
+        "des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam blandit pellentesque ex, sit amet hendrerit diam fermentum at. Pellentesque imperdiet risus turpis, a malesuada orci rhoncus a. "
+
+    },
+    {
+        "id":8,
+        "name":"HP 5.25 Floppy Disk Pack",
+        "model":"HP C5709b",
+        "image":"/card_img/floppy/floppyhp4-removebg-preview.png",
+        "price":500,
+        "des":" HP C5709A is a standard double-density (DD) 5.25 floppy disk with a storage capacity of 360KB. It's designed for use in vintage computers and devices that require this older format."
+    },
+    {
+        "id": 9,
+        "name": "Microsoft 3.5-Inch High-Density Floppy Disk",
+        "model": "Microsoft FD-144M",
+        "image": "/card_img/floppy/floppymic-removebg-preview.png",
+        "price": 45000,
+        "des": "Microsoft, like many other manufacturers, produced the standard 3.5-inch floppy disk that was widely used for saving and transferring data in the late 20th century. These disks were characterized by their rigid plastic casing and the sliding metal shutter that protected the magnetic medium inside. The 1.44 MB capacity was standard for high-density floppy disks, making them suitable for storing documents, software, and small multimedia files."
+      },
+      {
+        "id": 10,
+        "name": "Microsoft 5.25-Inch Floppy Disk",
+        "model": "Microsoft SFD-505",
+        "image": "/card_img/floppy/floppymic2-removebg-preview.png",
+        "price": 45000,
+        "des": "In the earlier years of personal computing, 5.25-inch floppy disks were the norm. Microsoft produced these disks in both double-density (360 KB) and high-density (1.2 MB) formats. They had a flexible plastic casing and were often used to store early software and documents."
+      },
+      {
+        "id": 11,
+        "name": "Microsoft Floppy Disk Storage Boxes",
+        "model": "Microsoft SFD-321B",
+        "image": "/card_img/floppy/floppymic3-removebg-preview.png",
+        "price": 45000,
+        "des": "To keep these fragile disks safe and organized, Microsoft, along with other manufacturers, often offered storage boxes or cases specifically designed for floppy disks. These boxes came in various sizes, holding anywhere from a dozen to several dozen disks. They helped protect the disks from dust, dirt, and physical damage."
+      },
+      {
+        "id": 12,
+        "name": "Microsoft Floppy Diskettes with Color Labels",
+        "model": "Microsoft SFD-321B",
+        "image": "/card_img/floppy/floppymic4-removebg-preview.png",
+        "price": 45000,
+        "des": "Microsoft, like other manufacturers, sometimes provided different colored labels or stickers for their floppy disks. These labels were used to categorize and organize data on the disks, with each color representing a different type of content. For example, a red label might indicate software, while a blue label could signify personal documents."
+      },
+      {
+        "id": 13,
+        "name": "Intel 3.5-Inch High-Density Floppy Disk",
+        "model": "Intel FD-144M",
+        "image": "/card_img/floppy/floppyintel-removebg-preview.png",
+        "price": 45000,
+        "des": "Intel, like many other manufacturers, produced the standard 3.5-inch floppy disk that was widely used for saving and transferring data in the late 20th century. These disks were characterized by their rigid plastic casing and the sliding metal shutter that protected the magnetic medium inside. The 1.44 MB capacity was standard for high-density floppy disks, making them suitable for storing documents, software, and small multimedia files."
+      },
+      {
+        "id": 14,
+        "name": "Intel 5.25-Inch Floppy Disk boxes",
+        "model": "Intel SFD-505",
+        "image": "/card_img/floppy/floppyintel2-removebg-preview.png",
+        "price": 45000,
+        "des": "In the earlier years of personal computing, 5.25-inch floppy disks were the norm. Intel produced these disks in both double-density (360 KB) and high-density (1.2 MB) formats. They had a flexible plastic casing and were often used to store early software and documents."
+      },
+      {
+        "id": 15,
+        "name": "Intel Floppy Disk Storage Boxes",
+        "model": "Intel SFD-321B",
+        "image": "/card_img/floppy/floppyintel3-removebg-preview.png",
+        "price": 45000,
+        "des": "To keep these fragile disks safe and organized, Intel, along with other manufacturers, often offered storage boxes or cases specifically designed for floppy disks. These boxes came in various sizes, holding anywhere from a dozen to several dozen disks. They helped protect the disks from dust, dirt, and physical damage."
+      },
+      {
+        "id": 16,
+        "name": "Intel Floppy Diskettes with Color Labels",
+        "model": "Intel SFD-321B",
+        "image": "/card_img/floppy/floppyintel4-removebg-preview.png",
+        "price": 45000,
+        "des": "Intel, like other manufacturers, sometimes provided different colored labels or stickers for their floppy disks. These labels were used to categorize and organize data on the disks, with each color representing a different type of content. For example, a red label might indicate software, while a blue label could signify personal documents."
+      }
+
+]

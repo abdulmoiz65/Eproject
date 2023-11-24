@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+     <!-- bootstrap cdn   -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+    
+    <!-- bootstrap links -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+     <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+     <!-- jquery link  -->
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+     <!-- custom-css  -->
+     <link rel="stylesheet" href="/snippets.css">
+     <link rel="stylesheet" href="detail.css">
+     <!-- custom js -->
+     <script src="../snippets.js"></script>
+     
+</head>
+<body>
+
+<!-- nav bar  -->
+<header id="NAV"></header>
+
+    <div class="container page">
+        <div class="row" id="productDetail">
+            <div class="col-lg-5">
+                <img id="productImage" class="card-img-top" alt="Product Image">
+            </div>
+
+            <div class="col-lg-6">
+                <h5 id="productName" class="card-title">Product Name</h5>
+                <p id="productModel" class="card-text">Product Model</p>
+                <p id="productPrice" class="card-text">Price</p>
+                <p class="card-text">Description:</p>
+                <p id="productDescription" class="card-text"></p>
+
+                <!-- Add to Cart Button -->
+                <button id="addToCartButton" class="btn btn-primary">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+      <!-- footer -->
+      <footer class="bg-light text-dark p-5" id="FOOT"></footer>
+    <script>
+        // Retrieve product ID from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get("id");
+
+     
+        const products = [
+    {
+      "id": 1,
+      "model": "Samsung7890",
+      "image":"/card_img/usb/usbsam-removebg-preview.png",
+      "name": "Samsung Pro USB 3.1 Flash Drive",
+      "des": "A high-speed USB 3.1 flash drive with a rugged and waterproof design. Ideal for professionals and outdoor enthusiasts.",
+      "price": 1700
+    },
+    {
+      "id": 2,
+      "model": "Samsung2345",
+      "image":"/card_img/usb/usbsam2-removebg-preview.png",
+      "name": "Samsung Fit Plus USB 3.1 Flash Drive",
+      "des": "A compact and low-profile USB 3.1 flash drive that can be left plugged in. Perfect for expanding storage on laptops.",
+      "price": 1200
+    },
+    {
+      "id": 3,
+      "model": "Samsung6789",
+      "image":"/card_img/usb/usbsam3-removebg-preview.png",
+      "name": "Samsung Bar Plus USB 3.0 Flash Drive",
+      "des": "A durable USB 3.0 flash drive with a metal casing and a key ring hole for easy portability.",
+      "price": 1000
+    },
+    {
+      "id": 4,
+      "model": "Samsung1234",
+      "image":"/card_img/usb/usbsam4-removebg-preview.png",
+      "name": "Samsung Duo Plus USB 3.1 Flash Drive",
+      "des": "A dual-interface USB 3.1 flash drive with USB-C and USB-A connectors for versatile connectivity.",
+      "price": 2200
+    },
+    {
+      "id": 5,
+      "model": "HP1234",
+      "image":"/card_img/usb/usbhp-removebg-preview.png",
+      "name": "HP Elite USB 3.0 Flash Drive",
+      "des": "A high-speed USB 3.0 flash drive with a sleek metal casing and fast data transfer speeds. Perfect for storing and transferring large files.",
+      "price": 1500
+    },
+    {
+      "id": 6,
+      "model": "HP5678",
+      "image":"/card_img/usb/usbhp2-removebg-preview.png",
+      "name": "HP v250w USB 2.0 Flash Drive",
+      "des": "A durable USB 2.0 flash drive with a retractable design. Suitable for everyday use and easy to carry.",
+      "price": 800
+    },
+    {
+      "id": 7,
+      "model": "HP9012",
+      "image":"/card_img/usb/usbhp3-removebg-preview.png",
+      "name": "HP x900w USB 3.1 Flash Drive",
+      "des": "A compact USB 3.1 flash drive with a stylish and capless design. Offers quick data transfer and ample storage capacity.",
+      "price": 2000
+    },
+    {
+      "id": 8,
+      "model": "HP3456",
+      "image":"/card_img/usb/usbhp4-removebg-preview.png",
+      "name": "HP Mini USB Flash Drive",
+      "des": "An ultra-compact USB flash drive designed for portability and convenience. Great for quick data transfers on the go.",
+      "price": 600
+    },
+    {
+      "id": 9,
+      "model": "Microsoft4567",
+      "image":"/card_img/usb/usbmic-removebg-preview.png",
+      "name": "Microsoft Surface USB-C Flash Drive",
+      "des": "A high-speed USB-C flash drive designed to work seamlessly with Microsoft Surface devices. Offers fast data transfer and a sleek, modern design.",
+      "price": 1800
+    },
+    {
+      "id": 10,
+      "model": "Microsoft8901",
+      "image":"/card_img/usb/usbmic2-removebg-preview.png",
+      "name": "Microsoft Mobile USB 3.0 Flash Drive",
+      "des": "A compact USB 3.0 flash drive with a swivel design for easy portability. Suitable for both mobile and desktop use.",
+      "price": 900
+    },
+    {
+      "id": 11,
+      "model": "Microsoft2345",
+      "image":"/card_img/usb/usbmic3-removebg-preview.png",
+      "name": "Microsoft Dual-Interface USB Flash Drive",
+      "des": "A versatile USB flash drive with dual USB-A and USB-C connectors for compatibility with various devices.",
+      "price": 1500
+    },
+    {
+      "id": 12,
+      "model": "Microsoft6789",
+      "image":"/card_img/usb/usbmic4-removebg-preview.png",
+      "name": "Microsoft Secure USB Flash Drive",
+      "des": "A USB flash drive with hardware-based encryption for securing sensitive data. Ideal for business and personal use.",
+      "price": 2200
+    },
+    {
+      "id": 13,
+      "model": "Intel1234",
+      "image":"/card_img/usb/usbintell-removebg-preview.png",
+      "name": "Intel Thunderbolt USB-C Flash Drive",
+      "des": "A high-speed Thunderbolt 4 and USB 3.2 Gen 2x2 flash drive with blazing-fast data transfer speeds. Ideal for professionals and content creators.",
+      "price": 2500
+    },
+    {
+      "id": 14,
+      "model": "Intel5678",
+      "name": "Intel Optane Memory USB Flash Drive",
+      "image":"/card_img/usb/usbintel2-removebg-preview.png",
+      "des": "An innovative USB flash drive using Intel Optane Memory technology to accelerate data access. Great for boosting system performance.",
+      "price": 1800
+    },
+    {
+      "id": 15,
+      "model": "Intel9012",
+      "name": "Intel Portable SSD USB Flash Drive",
+      "image":"/card_img/usb/usbintel3-removebg-preview.png",
+      "des": "A compact and high-performance USB flash drive with SSD-level speeds for fast file transfers and data storage.",
+      "price": 2000
+    },
+    {
+      "id": 16,
+      "model": "Intel3456",
+      "image":"/card_img/usb/usbintel4-removebg-preview.png",
+      "name": "Intel Pro USB 3.1 Flash Drive",
+      "des": "A professional-grade USB 3.1 flash drive with advanced security features and rugged design for data protection.",
+      "price": 1600
+    }
+  ]
+  ;
+ 
+
+        // Find the product with the matching ID
+        const selectedProduct = products.find(product => product.id == productId);
+
+        
+        if (selectedProduct) {
+            document.getElementById("productImage").src = selectedProduct.image;
+            document.getElementById("productName").textContent = selectedProduct.name;
+            document.getElementById("productModel").textContent = `Product Model: ${selectedProduct.model}`;
+            document.getElementById("productPrice").textContent = `Price: $${selectedProduct.price}`;
+            document.getElementById("productDescription").textContent = selectedProduct.des;
+
+            // Add to Cart Button Click Event
+            const addToCartButton = document.getElementById("addToCartButton");
+            addToCartButton.addEventListener("click", () => {
+              
+                alert(`Added ${selectedProduct.name} to the cart!`);
+            });
+        }
+    </script>
+</body>
+</html>

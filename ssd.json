@@ -1,0 +1,132 @@
+[
+    {
+        "id":1,
+        "model": "Samsung-SSD-1234",
+        "image":"/card_img/ssd/ssdsam-removebg-preview.png",
+        "name": "Samsung EVO SSD 1TB",
+        "des": "A high-quality 1TB SSD from Samsung, known for its reliability and performance. Suitable for various applications, including gaming and content creation.",
+        "price": 4800
+      },
+      {
+        "id":2,
+        "model": "Samsung-SSD-5678",
+        "image":"/card_img/ssd/ssdsam2-removebg-preview.png",
+        "name": "Samsung PRO SSD 512GB",
+        "des": "A 512GB SSD from Samsung with advanced features for professional use, providing excellent speed and durability.",
+        "price": 3200
+      },
+      {
+        "id":3,
+        "model": "Samsung-SSD-9012",
+        "image":"/card_img/ssd/ssdsam3-removebg-preview.png",
+        "name": "Samsung SSD 256GB",
+        "des": "A portable 256GB SSD with a sleek design, perfect for on-the-go storage and quick data transfers.",
+        "price": 2200
+      },
+      {
+        "id":4,
+        "model": "Samsung-SSD-3456",
+        "image":"/card_img/ssd/ssdsam4-removebg-preview.png",
+        "name": "Samsung Enterp SSD 2TB",
+        "des": "A high-capacity 2TB SSD built for enterprise-level performance and data integrity. Suitable for data centers and business applications.",
+        "price": 6800
+      },
+      {
+        "id":5,
+        "model": "HP-SSD-1234",
+        "image":"/card_img/ssd/ssdhp-removebg-preview.png",
+        "name": "HP Elite SSD 1TB",
+        "des": "A high-performance 1TB SSD from HP, featuring advanced technology for fast data access and storage. Ideal for professionals and enthusiasts.",
+        "price": 4900
+      },
+      {
+        "id":6,
+        "model": "HP-SSD-5678",
+        "name": "HP Pro SSD 512GB",
+        "image":"/card_img/ssd/ssdhpp2-removebg-preview.png",
+        "des": "A 512GB SSD from HP designed for professional use, offering reliability and solid performance.",
+        "price": 3100
+      },
+      {
+        "id":7,
+        "model": "HP-SSD-9012",
+        "name": "HP Portable SSD 256GB",
+        "image":"/card_img/ssd/ssdhp3-removebg-preview.png",
+        "des": "A portable 256GB SSD from HP with a sleek and compact design, perfect for on-the-go storage and quick data transfers.",
+        "price": 2300
+      },
+      {
+        "id":8,
+        "model": "HP-SSD-3456",
+        "name": "HP Enterprise SSD 2TB",
+        "image":"/card_img/ssd/ssdhhp4-removebg-preview.png",
+        "des": "A high-capacity 2TB SSD designed for enterprise-level performance and data management. Suitable for data centers and business applications.",
+        "price": 7000
+      },
+      {
+        "id":9,
+        "model": "Microsoft-SSD-1234",
+        "name": "Microsoft Surface SSD 1TB",
+        "image":"/card_img/ssd/ssdmic-removebg-preview.png",
+        "des": "A high-performance 1TB solid-state drive designed specifically for Microsoft Surface devices. Offers fast data access and storage capabilities.",
+        "price": 4500
+      },
+      {
+        "id":10,
+        "model": "Microsoft-SSD-5678",
+        "name": "Microsoft Pro SSD 512GB",
+        "image":"/card_img/ssd/ssdmic2-removebg-preview.png",
+        "des": "A 512GB SSD optimized for professional use, providing reliable and efficient storage for demanding tasks.",
+        "price": 2800
+      },
+      {
+        "id":11,
+        "model": "Microsoft-SSD-9012",
+        "name": "Microsoft Mob SSD 256GB",
+        "image":"/card_img/ssd/ssdmic3-removebg-preview.png",
+        "des": "A portable 256GB SSD from Microsoft, featuring a compact design for on-the-go storage and quick data transfers.",
+        "price": 2200
+      },
+      {
+        "id":12,
+        "model": "Microsoft-SSD-3456",
+        "name": "Microsoft Enterp SSD 2TB",
+        "image":"/card_img/ssd/ssdmic44-removebg-preview.png",
+        "des": "A high-capacity 2TB SSD built for enterprise-grade performance and data reliability. Ideal for data centers and business applications.",
+        "price": 6800
+      },
+      {
+        "id":13,
+        "model": "Intel-SSD-1234",
+        "name": "Intel Optane SSD 1TB",
+        "image":"/card_img/ssd/ssdintel-removebg-preview.png",
+        "des": "A high-performance 1TB Optane SSD from Intel, known for ultra-fast data access and low latency. Ideal for demanding workloads.",
+        "price": 5500
+      },
+      {
+        "id":14,
+        "model": "Intel-SSD-5678",
+        "name": "Intel Pro SSD 512GB",
+        "image":"/card_img/ssd/ssdintel2-removebg-preview.png",
+        "des": "A 512GB SSD from Intel, designed for professional use with high reliability and enhanced performance.",
+        "price": 3200
+      },
+      {
+        "id":15,
+        "model": "Intel-SSD-9012",
+        "name": "Intel Gaming SSD 1TB",
+        "image":"/card_img/ssd/ssdintel3-removebg-preview.png",
+        "des": "A 1TB SSD tailored for gaming enthusiasts, offering fast load times and a smoother gaming experience.",
+        "price": 4000
+      },
+      {
+        "id":16,
+        "model": "Intel-SSD-3456",
+        "image":"/card_img/ssd/ssdintell4-removebg-preview.png",
+        "name": "Intel Data Center SSD 4TB",
+        "des": "A high-capacity 4TB SSD designed for data center use, providing dependable storage and efficient data management.",
+        "price": 9600
+      }
+]
+      
+  

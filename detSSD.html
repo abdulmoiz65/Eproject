@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+     <!-- bootstrap cdn   -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+    
+    <!-- bootstrap links -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+     <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+     <!-- jquery link  -->
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+     <!-- custom-css  -->
+     <link rel="stylesheet" href="/snippets.css">
+     <link rel="stylesheet" href="detail.css">
+     <!-- custom js -->
+     <script src="../snippets.js"></script>
+     
+</head>
+<body>
+
+<!-- nav bar  -->
+<header id="NAV"></header>
+
+    <div class="container page">
+        <div class="row" id="productDetail">
+            <div class="col-lg-5">
+                <img id="productImage" class="card-img-top" alt="Product Image">
+            </div>
+
+            <div class="col-lg-6">
+                <h5 id="productName" class="card-title">Product Name</h5>
+                <p id="productModel" class="card-text">Product Model</p>
+                <p id="productPrice" class="card-text">Price</p>
+                <p class="card-text">Description:</p>
+                <p id="productDescription" class="card-text"></p>
+
+                <!-- Add to Cart Button -->
+                <button id="addToCartButton" class="btn btn-primary">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+      <!-- footer -->
+      <footer class="bg-light text-dark p-5" id="FOOT"></footer>
+    <script>
+        // Retrieve product ID from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get("id");
+
+     
+        const products = [
+        {
+        "id":1,
+        "model": "Samsung-SSD-1234",
+        "image":"/card_img/ssd/ssdsam-removebg-preview.png",
+        "name": "Samsung EVO SSD 1TB",
+        "des": "A high-quality 1TB SSD from Samsung, known for its reliability and performance. Suitable for various applications, including gaming and content creation.",
+        "price": 4800
+      },
+      {
+        "id":2,
+        "model": "Samsung-SSD-5678",
+        "image":"/card_img/ssd/ssdsam2-removebg-preview.png",
+        "name": "Samsung PRO SSD 512GB",
+        "des": "A 512GB SSD from Samsung with advanced features for professional use, providing excellent speed and durability.",
+        "price": 3200
+      },
+      {
+        "id":3,
+        "model": "Samsung-SSD-9012",
+        "image":"/card_img/ssd/ssdsam3-removebg-preview.png",
+        "name": "Samsung Portable SSD 256GB",
+        "des": "A portable 256GB SSD with a sleek design, perfect for on-the-go storage and quick data transfers.",
+        "price": 2200
+      },
+      {
+        "id":4,
+        "model": "Samsung-SSD-3456",
+        "image":"/card_img/ssd/ssdsam4-removebg-preview.png",
+        "name": "Samsung Enterprise SSD 2TB",
+        "des": "A high-capacity 2TB SSD built for enterprise-level performance and data integrity. Suitable for data centers and business applications.",
+        "price": 6800
+      },
+      {
+        "id":5,
+        "model": "HP-SSD-1234",
+        "image":"/card_img/ssd/ssdhp-removebg-preview.png",
+        "name": "HP Elite SSD 1TB",
+        "des": "A high-performance 1TB SSD from HP, featuring advanced technology for fast data access and storage. Ideal for professionals and enthusiasts.",
+        "price": 4900
+      },
+      {
+        "id":6,
+        "model": "HP-SSD-5678",
+        "name": "HP Pro SSD 512GB",
+        "image":"/card_img/ssd/ssdhpp2-removebg-preview.png",
+        "des": "A 512GB SSD from HP designed for professional use, offering reliability and solid performance.",
+        "price": 3100
+      },
+      {
+        "id":7,
+        "model": "HP-SSD-9012",
+        "name": "HP Portable SSD 256GB",
+        "image":"/card_img/ssd/ssdhp3-removebg-preview.png",
+        "des": "A portable 256GB SSD from HP with a sleek and compact design, perfect for on-the-go storage and quick data transfers.",
+        "price": 2300
+      },
+      {
+        "id":8,
+        "model": "HP-SSD-3456",
+        "name": "HP Enterprise SSD 2TB",
+        "image":"/card_img/ssd/ssdhhp4-removebg-preview.png",
+        "des": "A high-capacity 2TB SSD designed for enterprise-level performance and data management. Suitable for data centers and business applications.",
+        "price": 7000
+      },
+      {
+        "id":9,
+        "model": "Microsoft-SSD-1234",
+        "name": "Microsoft Surface SSD 1TB",
+        "image":"/card_img/ssd/ssdmic-removebg-preview.png",
+        "des": "A high-performance 1TB solid-state drive designed specifically for Microsoft Surface devices. Offers fast data access and storage capabilities.",
+        "price": 4500
+      },
+      {
+        "id":10,
+        "model": "Microsoft-SSD-5678",
+        "name": "Microsoft Pro SSD 512GB",
+        "image":"/card_img/ssd/ssdmic2-removebg-preview.png",
+        "des": "A 512GB SSD optimized for professional use, providing reliable and efficient storage for demanding tasks.",
+        "price": 2800
+      },
+      {
+        "id":11,
+        "model": "Microsoft-SSD-9012",
+        "name": "Microsoft Mobile SSD 256GB",
+        "image":"/card_img/ssd/ssdmic3-removebg-preview.png",
+        "des": "A portable 256GB SSD from Microsoft, featuring a compact design for on-the-go storage and quick data transfers.",
+        "price": 2200
+      },
+      {
+        "id":12,
+        "model": "Microsoft-SSD-3456",
+        "name": "Microsoft Enterprise SSD 2TB",
+        "image":"/card_img/ssd/ssdmic44-removebg-preview.png",
+        "des": "A high-capacity 2TB SSD built for enterprise-grade performance and data reliability. Ideal for data centers and business applications.",
+        "price": 6800
+      },
+      {
+        "id":13,
+        "model": "Intel-SSD-1234",
+        "name": "Intel Optane SSD 1TB",
+        "image":"/card_img/ssd/ssdintel-removebg-preview.png",
+        "des": "A high-performance 1TB Optane SSD from Intel, known for ultra-fast data access and low latency. Ideal for demanding workloads.",
+        "price": 5500
+      },
+      {
+        "id":14,
+        "model": "Intel-SSD-5678",
+        "name": "Intel Pro SSD 512GB",
+        "image":"/card_img/ssd/ssdintel2-removebg-preview.png",
+        "des": "A 512GB SSD from Intel, designed for professional use with high reliability and enhanced performance.",
+        "price": 3200
+      },
+      {
+        "id":15,
+        "model": "Intel-SSD-9012",
+        "name": "Intel Gaming SSD 1TB",
+        "image":"/card_img/ssd/ssdintel3-removebg-preview.png",
+        "des": "A 1TB SSD tailored for gaming enthusiasts, offering fast load times and a smoother gaming experience.",
+        "price": 4000
+      },
+      {
+        "id":16,
+        "model": "Intel-SSD-3456",
+        "image":"/card_img/ssd/ssdintell4-removebg-preview.png",
+        "name": "Intel Data Center SSD 4TB",
+        "des": "A high-capacity 4TB SSD designed for data center use, providing dependable storage and efficient data management.",
+        "price": 9600
+      }
+                         
+    ];
+ 
+
+        // Find the product with the matching ID
+        const selectedProduct = products.find(product => product.id == productId);
+
+        
+        if (selectedProduct) {
+            document.getElementById("productImage").src = selectedProduct.image;
+            document.getElementById("productName").textContent = selectedProduct.name;
+            document.getElementById("productModel").textContent = `Product Model: ${selectedProduct.model}`;
+            document.getElementById("productPrice").textContent = `Price: $${selectedProduct.price}`;
+            document.getElementById("productDescription").textContent = selectedProduct.des;
+
+            // Add to Cart Button Click Event
+            const addToCartButton = document.getElementById("addToCartButton");
+            addToCartButton.addEventListener("click", () => {
+              
+                alert(`Added ${selectedProduct.name} to the cart!`);
+            });
+        }
+    </script>
+</body>
+</html>
