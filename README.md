@@ -1,9 +1,9 @@
 # Eproject
-complete static website.
+complete static Ecommerce website.
 <br>
-technologies :
-      -- html
-      -- css (bootstrap)
-      -- javascript and jquery
-      -- json 
+technologies :<br>
+      -- html<br>
+      -- css (bootstrap)<br>
+      -- javascript and jquery<br>
+      -- json <br>
 
